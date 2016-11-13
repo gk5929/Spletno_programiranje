@@ -3,8 +3,6 @@ var attempt = 3; // Variable to count number of attempts.
 function validate(){
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
-alert(username);
-alert(password);
 if ( username == "1234" && password == "123"){
 alert ("Login successfully");
 window.location = "index2.html"; // Redirecting to other page.
@@ -17,7 +15,7 @@ alert("You have left "+attempt+" attempt;");
 if( attempt == 0){
 document.getElementById("username").disabled = true;
 document.getElementById("password").disabled = true;
-document.getElementById("submit").disabled = true;
+document.getElementById("Gumb").disabled = true;
 return false;
 }
 }
