@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+	<translation id="home">
+		<en>Home</en>
+		<si>Domov</si>
+	</translation>
+	
+	<translation id="about">
+		<en>About</en>
+		<si>O meni</si>
+	</translation>
+	
+	<translation id="reg">
+		<en>Register</en>
+		<si>Registracija</si>
+	</translation>
+	
+	<translation id="opis">
+		<en>Description</en>
+		<si>Opis</si>
+	</translation>
+	
+	<translation id="podopis">
+		<en>My personal library</en>
+		<si>Moja osebna knjiznica.</si>
+	</translation>
+	
+	
+	<translation id="podopisdve">
+		<en>Books for small and big readers.</en>
+		<si>Knjige za male in velike bralce.</si>
+	</translation>
+	
+	<translation id="prij">
+		<en>Sign in :</en>
+		<si>Prijava :</si>
+	</translation>
+	
+	<translation id="dods">
+		<en>Add Books</en>
+		<si>Dodaj knjige</si>
+	</translation>
+	
+	<translation id="pregs">
+		<en>Overview</en>
+		<si>Pregled Izposoj</si>
+	</translation>
+	
+	<translation id="izpis">
+		<en>Sign Out</en>
+		<si>Izpis</si>
+	</translation>
+</translations>
