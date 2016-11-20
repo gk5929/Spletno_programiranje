@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>BookKeeper</title>
+
+
+<script type = "text/javascript"  src = "readxml.js" >
+	</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>
+function trans(lang){
+	
+	 xmlDoc=loadXMLDoc('prevod.xml');
+	 var x=xmlDoc.getElementsByTagName("translation");
+		  for (i=0;i<x.length;i++)
+			  { 
+	 			 var t=document.getElementById(x[i].getAttribute('id'));
+	 			 t.innerHTML=(x[i].getElementsByTagName(lang)[0].childNodes[0].nodeValue);
+			  }
+}
+</script>
+
+</head>
+
+<body>
+<div id="container">
+		<div id="header">
+        	<h1>BookKeeper</h1>
+            <img src="slo.gif" alt="Slovenian" width="30" height="20" onclick="trans('si')">
+            <img src="eng.png" alt="English" width="30" height="20" onclick="trans('en')">
+        </div>   
+        <div id="menu">
+        	<ul>
+            	<li class="menuitem"><a href="index.html"><span id="home">Domov</span></a></li>
+                <li class="menuitem"><a href="about.html"><span id="about">O Nas</span></a></li>
+                <li class="menuitem"><a href="register.html"><span id="reg">Registracija</span></a></li>
+            </ul>
+        </div>
+        
+        <div id="leftmenu" style="visibility:hidden">
+        </div>
+        
+		<div id="content">
+        <div id="content_top"></div>
+        <div id="content_main">
+        	        		<p>
+                Moja osebna Knjiznica
+                </p>
+                <p>
+                Na tej strani si lahko izposojate knjige iz moje osebne knjiznice.
+				<p>&nbsp;</p>
+           		<p>&nbsp;</p>
+               <p>
+               Knjige lahko pridete iskat osebno po dogovoru ali pa vam jih pošljem po posti.
+			   
+			   <p>&nbsp;</p>
+			<p>&nbsp;</p>
+            
+        </div>
+        <div id="content_bottom"></div>
+            
+            <div id="footer">Made by me. <br />27.10.2016</div>
+      </div>
+   </div>
+</body>
+</html>
