@@ -24,7 +24,14 @@
 		<en>My personal library</en>
 		<si>Moja osebna knjiznica.</si>
 	</translation>
-	
+		<translation id="nekaj">
+		<en>On this site you can borrow books from my personal collection.</en>
+		<si>Na tej strani si lahko izposojate knjige iz moje osebne knjiznice.</si>
+	</translation>
+	<translation id="nekajdrugega">
+		<en>You can get books personaly or i can send them to you by mail.</en>
+		<si>Knjige lahko pridete iskat osebno po dogovoru ali pa vam jih pošljem po posti.</si>
+	</translation>
 	
 	<translation id="podopisdve">
 		<en>Books for small and big readers.</en>
@@ -49,5 +56,7 @@
 	<translation id="izpis">
 		<en>Sign Out</en>
 		<si>Izpis</si>
-	</translation>
+	</translation>	
+	
+
 </translations>

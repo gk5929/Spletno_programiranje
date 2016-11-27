@@ -1,11 +1,8 @@
-// JavaScript Document
-
 function chkUsr() {
 
-  	var myName = event.currentTarget;
-	var ele = document.getElementById("usrpremal");
-  	var pos = myName.value.search(/^[a-z0-9A-Z]{6}.*$/);	 
-	  if (pos != 0) {
+  	var myName = document.getElementById("username");	
+	var ele = document.getElementById("usrpremal"); 
+	  if (myName.value.length< 6) {
 			   ele.style.color="red";
 			   ele.innerHTML="Vsaj 6 znakov."; 
 	   } 
@@ -16,12 +13,12 @@ function chkUsr() {
 	}
 function chkPass() {
 
-  	var myName = event.currentTarget;
+  	var myName = document.getElementById("password");
 	var ele = document.getElementById("passmal");
-  	var pos = myName.value.search(/^[a-z0-9A-Z]{6}.*$/);	 
+  	var pos = myName.value.search(/^[a-z0-9A-Z]{6,20}.*$/);	 
 	  if (pos != 0) {
 			   ele.style.color="red";
-			   ele.innerHTML="Vsaj 6 znakov."; 
+			   ele.innerHTML="Vsaj 6 znakov. Sestavljen samo iz črk in številk"; 
 	   } 
 	   else
 	   {
@@ -45,7 +42,7 @@ function chkPass2() {
 function chkEmail() {
 
 
-  	var myName = event.currentTarget;
+  	var myName = document.getElementById("email");
 	var ele = document.getElementById("mailmal");
   	var pos = myName.value.search(/^[a-z0-9A-Z._-]+@[a-z0-9A-Z._-]*[.]...?$/);	 
 	  if (pos != 0) {

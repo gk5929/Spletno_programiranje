@@ -4,69 +4,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>BookKeeper</title>
-
 <script type = "text/javascript"  src = "readxml.js" >
-	</script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-</script>
+    </script>
+<script type = "text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
 
-<script>
-function trans(lang){
-	
-	 xmlDoc=loadXMLDoc('prevod.xml');
-	 var x=xmlDoc.getElementsByTagName("translation");
-		  for (i=0;i<x.length;i++)
-			  { 
-	 			 var t=document.getElementById(x[i].getAttribute('id'));
-				 if(t){
-				 	 t.innerHTML=(x[i].getElementsByTagName(lang)[0].childNodes[0].nodeValue);
-				 }
-	 			
-			  }
-}
-</script>
+<script type = "text/javascript" src = "trans.js"></script>
 
-<script>
-function addRow(t,tt,ttt,tttt)
-{
-         if (!document.getElementsByTagName) return;
-         tabBody=document.getElementsByTagName("TBODY").item(0);
-         row=document.createElement("TR");
-         cell1 = document.createElement("TD");
-         cell2 = document.createElement("TD");
-		 cell3 = document.createElement("TD");
-		 cell4 = document.createElement("TD");
-         textnode1=document.createTextNode(t);
-         textnode2=document.createTextNode(tt);
-		 textnode3=document.createTextNode(ttt);
-		 textnode4=document.createTextNode(tttt);
-         cell1.appendChild(textnode1);
-         cell2.appendChild(textnode2);
-		 cell3.appendChild(textnode3);
-		 cell4.appendChild(textnode4);
-         row.appendChild(cell1);
-         row.appendChild(cell2);
-		 row.appendChild(cell3);
-		 row.appendChild(cell4);
-         tabBody.appendChild(row);
-       
-   
-}
-		
-function change(color) {
-	 event.srcElement.style.backgroundColor=color 
-	 }
-</script> 
-
-
+<script type = "text/javascript" src="js/login.js"></script>
+<script type = "text/javascript" src="tabela.js"></script>
 </head>
+
+
 
 <body>
 <div id="container">
 		<div id="header">
         	<h1>BookKeeper</h1>
-            <img src="slo.gif" alt="Slovenian" width="30" height="20" onclick="trans('si')">
-            <img src="eng.png" alt="English" width="30" height="20" onclick="trans('en')">
+            <img src="slo.gif" alt="Slovenian" width="30" height="20" onclick="trans('si')"/>
+            <img src="eng.png" alt="English" width="30" height="20" onclick="trans('en')"/>
         </div> 
         <div id="menu">
         	<ul>
@@ -96,10 +51,11 @@ function change(color) {
         <div id="content_main">
         		<h1>
                 		SEM PRIDEJO TABELE ki so povezane z bazo zaenkrat se baze nimam
-                        <p>&nbsp;</p>
-          	 			<p>&nbsp;</p>
+                        
        			</h1>
-        		<table id="tabela" border="0" width="100%" border="0" onmouseover="change('#0099CC')" onmouseout="change('#FFF')">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+        		<table id="tabela" border="0" width="100%" onmouseover="change('#0099CC')" onmouseout="change('#FFF')">
         		  <caption>
         		    Tabela
        		      </caption>
@@ -115,9 +71,10 @@ function change(color) {
         		    <td>1</td>
         		    <td>1.1.2016</td>
 					<td></td>
+                  </tr>
                 </tbody>
       		  </table>
-              <input  id="addr" type="submit" value="Add row" onclick="addRow('2','2','2','2')">
+              <input  id="addr" type="submit" value="Add row" onclick="addRow('2','2','2','2')"/>
         		  <p>&nbsp;</p>
         		  <p>&nbsp;</p>
         	<p>&nbsp;</p>

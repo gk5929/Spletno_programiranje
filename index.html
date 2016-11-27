@@ -6,33 +6,19 @@
 <title>BookKeeper</title>
 <script type = "text/javascript"  src = "readxml.js" >
 	</script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-</script>
+<script type = "text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
 
-<script>
-function trans(lang){
-	
-	 xmlDoc=loadXMLDoc('prevod.xml');
-	 var x=xmlDoc.getElementsByTagName("translation");
-		  for (i=0;i<x.length;i++)
-			  { 
-	 			 var t=document.getElementById(x[i].getAttribute('id'));
-	 			  if(t){
-				 	 t.innerHTML=(x[i].getElementsByTagName(lang)[0].childNodes[0].nodeValue);
-				 }
-			  }
-}
-</script>
+<script type = "text/javascript" src = "trans.js"></script>
 
-<script src="js/login.js"></script>
+<script type = "text/javascript" src="js/login.js"></script>
 </head>
 
 <body>
 <div id="container">
 		<div id="header">
         	<h1>BookKeeper</h1>
-            <img src="slo.gif" alt="Slovenian" width="30" height="20" onclick="trans('si')">
-            <img src="eng.png" alt="English" width="30" height="20" onclick="trans('en')">
+            <img src="slo.gif" alt="Slovenian" width="30" height="20" onclick="trans('si')"/>
+            <img src="eng.png" alt="English" width="30" height="20" onclick="trans('en')"/>
         </div>   
         <div id="menu">
         	<ul>
@@ -56,18 +42,19 @@ function trans(lang){
             <p><span id="podopisdve">Knjige za male in velike bralce.</span></p>
         	<p>&nbsp;</p>
 			<p>&nbsp;</p>
-            <p> <h2><span id="prij">Prijava :</span></h2></p>
+            <h2><span id="prij">Prijava :</span></h2>
             <p>&nbsp;</p>
 			<p>&nbsp;</p>
             <div id="prijava">
 
 
-            <form>
- 			Username: <input id = "username" type="text" placeholder="Enter Username" name="username" ><br>
-  			Password: <input id= "password" type="password" placeholder="Enter Password" name="password" ><br>
-  			
+            <form action="index.html">
+ 			Username: <input id = "username" type="text" name="username" /><br/>
+  			Password: <input id= "password" type="password" name="password" /><br/>
+  			<!--placeholder="Enter username"-->
+            <!--placeholder="Enter password"    sam mi ga w3 ni spusto naprej-->
 			</form>
-            <input  id="Gumb" type="submit" value="Prijavi" onclick="validate()">
+            <input  id="Gumb" type="submit" value="Prijavi" onclick="validate()"/>
             </div>
             
         </div>
